@@ -1,2 +1,8 @@
 name : Our First Workflow # 이름 생략시 파일 이름이 제목으로 설정됨
 on : push
+jobs : 
+  echa :
+    runs-on: ubuntu-latest
+    steps : # 값으로 시퀸스를 받는다, 순차적으로 실행할 단계를 적어도 1개 명시
+      - run : echo 'Hello, GitHub Actions!'
+  

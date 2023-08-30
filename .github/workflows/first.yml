@@ -1,0 +1,2 @@
+name : Our First Workflow # 이름 생략시 파일 이름이 제목으로 설정됨
+on : push

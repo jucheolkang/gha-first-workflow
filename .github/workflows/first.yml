@@ -5,4 +5,11 @@ jobs :
     runs-on: ubuntu-latest
     steps : # 값으로 시퀸스를 받는다, 순차적으로 실행할 단계를 적어도 1개 명시
       - run : echo 'Hello, GitHub Actions!'
-  
+  pwd-ls:
+    name: PWD & LS
+    runs-on : ubuntu-latest
+    steps:
+      - name : print working directory # 작업마다 이름 설정 가능
+        run : pwd #pwd는 현제 경로를 출력해준다
+      - name : List files
+        run : ls -al # 현제 경로에 있는 모든 파일과 디렉토리를 나열해 준다

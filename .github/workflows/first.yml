@@ -1,5 +1,5 @@
 name : Our First Workflow # 이름 생략시 파일 이름이 제목으로 설정됨
-on : push
+on : push #  on 속성을 통해서 해당 워크플로우가 언제 실행되는지를 정의합니다. - push는 main에 push가 발생할 경우 실행
 jobs : 
   echa :
     runs-on: ubuntu-latest
